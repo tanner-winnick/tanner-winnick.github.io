@@ -1,6 +1,6 @@
-/* ============================================================
+/* 
    Tokens
-   ============================================================ */
+*/
 :root{
   --bg:            #EFE9DC;
   --surface:       #E4DBC8;
@@ -8,7 +8,7 @@
   --ink:           #2A2620;
   --ink-soft:      #665C4B;
   --ink-faint:     #9A8F78;
-  --accent:        #3F5A50;   /* deep pine — not the terracotta cliché */
+  --accent:        #3F5A50;
   --accent-soft:   #6B8377;
   --status-open:   #8A5A2E;
 
@@ -20,7 +20,7 @@
 }
 
 @media (prefers-color-scheme: dark){
-  /* Intentionally no dark mode override — the beige paper tone is the point. */
+  /* no dark mode override*/
 }
 
 *{ box-sizing: border-box; }
@@ -47,7 +47,6 @@ body{
   padding: 0 28px;
 }
 
-/* subtle paper grain, static, cheap */
 .grain{
   position: fixed;
   inset: 0;
@@ -58,9 +57,9 @@ body{
   mix-blend-mode: multiply;
 }
 
-/* ============================================================
+/* 
    Header
-   ============================================================ */
+*/
 .site-header{
   position: sticky;
   top: 0;
@@ -109,9 +108,9 @@ body{
   border-color: var(--accent);
 }
 
-/* ============================================================
+/* 
    Hero
-   ============================================================ */
+*/
 .hero{
   padding: 96px 28px 72px;
 }
@@ -158,9 +157,9 @@ h1{
 .hero-meta .dot{ margin: 0 8px; }
 .hero-meta em{ font-style: normal; color: var(--accent); }
 
-/* ============================================================
+/* 
    Section shared
-   ============================================================ */
+*/
 section{
   padding: 64px 28px;
   border-top: 1px solid var(--surface-line);
@@ -179,9 +178,9 @@ section{
   margin: 0 0 40px;
 }
 
-/* ============================================================
-   Log (signature element)
-   ============================================================ */
+/* 
+   Log 
+ */
 .log{
   list-style: none;
   margin: 0;
@@ -274,9 +273,9 @@ section{
   }
 }
 
-/* ============================================================
+/* 
    Education
-   ============================================================ */
+ */
 .edu-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,9 +313,9 @@ section{
   .edu-grid{ grid-template-columns: 1fr; }
 }
 
-/* ============================================================
+/* 
    Skills
-   ============================================================ */
+ */
 .skills-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -353,9 +352,9 @@ section{
   .skills-grid{ grid-template-columns: 1fr; gap: 32px; }
 }
 
-/* ============================================================
+/* 
    Contact
-   ============================================================ */
+ */
 .contact-links{
   display: flex;
   flex-direction: column;
@@ -378,9 +377,9 @@ section{
   color: var(--accent);
 }
 
-/* ============================================================
+/* 
    Footer
-   ============================================================ */
+ */
 .site-footer{
   padding: 32px 28px 56px;
   font-family: var(--mono);
@@ -388,9 +387,9 @@ section{
   color: var(--ink-faint);
 }
 
-/* ============================================================
-   Reveal-on-scroll (progressive enhancement)
-   ============================================================ */
+/* 
+   Reveal-on-scroll 
+ */
 .log-entry,
 .edu-card,
 .skills-col{
